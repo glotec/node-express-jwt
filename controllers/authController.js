@@ -8,10 +8,18 @@ module.exports = {
     },
 
     signup_post : async (req, res) => {
+        // console.log(req.body);
+        const { email, password } = req.body;
+
+        console.log(email, password);
         await res.send('new signup');
     },
 
     login_post : async (req, res) => {
+        // console.log(req.body);
+        const { email, password } = req.body;
+
+        console.log(email, password);
         await res.send('user login');
     },
 }
